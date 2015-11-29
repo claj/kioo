@@ -1,22 +1,33 @@
 # kioo
 
-Kioo brings Enlive/Enfocus style templates to React.  This allows for much better separation between the view and logic layers of the application.  
+Kioo brings Enlive/Enfocus style templates to React.  This allows for much better separation between the view and logic layers of the application.
 
 This project is very early on in development and the API is expected to change as development progresses.
+
+## Why, Claj, why did you fork it?
+
+I've been testing out Kioo for quite some time. I tried to use it with om.next, but found that several deps where outdated beyond rescue, and that alesguzik had made the porting of common code to .cljc-files instead of the previous .cljx.
+
+Currently I use this version of kioo with om.next and it actually seem to work. I don't know if it's a good abstraction to work with om.next, yet, but I had to try. Om.next is currently under heavy development, so we'll see what happends. Maybe kioo is not the right thing, or maybe there are possibilities to integrate it tighter with om.next - the enlive/kioo snippet is actually quite close to a component...
+
+I have not tested wether reagent works with the dependency updates and all.
+
+The examples are probably outdated.
+
+Given the amazing development of ClojureScript lately, maybe Enlive could be ported directly to .cljc-files (modulo resource-loading).
 
 ### What does kioo mean? 
 Kioo is Swahili for mirror. Facebook's React library is built around the idea that the view is a reflection of your application state.
 
-
 ## Artifact
 
-All artifacts are published to [clojars](https://clojars.org/kioo). Latest stable version is `0.4.0`:
+Please check out the repo, do `lein install` and add it to your `project.clj` as
 
 ```
-[kioo "0.4.1"] ;stable
-
-[kioo "0.4.2-SNAPSHOT"] ;risky
+[claj/kioo "0.4.2-SNAPSHOT"]
 ```
+
+No publishing to clojars yet, just nag me if you need it.
 
 ## Concepts
 
