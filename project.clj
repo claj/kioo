@@ -1,18 +1,18 @@
-(defproject org.clojars.alesguzik/kioo "0.4.2-SNAPSHOT"
-  :description "enlive/enfocus style templating for Facebook's React."
-  :url "http://github.com/ckirkendall/kioo"
+(defproject claj/kioo "0.4.2-SNAPSHOT"
+  :description "enlive/enfocus style templating for Facebook's React. Forked from ckirkendall/kioo"
+  :url "http://github.com/claj/kioo"
   :author "Creighton Kirkendall"
   :min-lein-version "2.0.0"
   :lein-release {:deploy-via :clojars}
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[enlive "1.1.5"]
-                 [cljsjs/react "0.13.3-0"]
+  :dependencies [[enlive "1.1.6"]
+                 [cljsjs/react "0.14.3-0"]
                  [org.clojure/clojure "1.7.0"]
-                 [org.clojure/clojurescript "1.7.48"]
+                 [org.clojure/clojurescript "1.7.170"]
                  [com.googlecode.htmlcompressor/htmlcompressor "1.5.2"]
-                 [sablono "0.3.4"]
-                 [hickory "0.5.3"]
+                 [sablono "0.4.0"]
+                 [hickory "0.5.4"]
                  [org.omcljs/om "0.9.0" :exclusions [cljsjs/react]]
                  [reagent "0.5.1" :exclusions [cljsjs/react]]
                  [enlive-ws  "0.1.1"]]
